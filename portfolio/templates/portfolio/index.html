@@ -26,7 +26,7 @@
 
 
           <div class="home_img2">
-            <img src="{% static 'portfolio/images/profileLinkedin' %}" alt="">
+            <img src="{% static 'portfolio/images/profileLinkedin.jfif' %}" alt="">
           </div>
 
 
@@ -104,12 +104,12 @@
 
 
           <div class="about_button">
-            <a download="" href="assets/pdf/Luiza's CV.pdf" class="button button_flex">
+            <a download="" href= "{% static 'portfolio/pdf/CVMar2023.pdf' %}" class="button button_flex">
               Download CV<i class="uil uil-file-download button_icon"></i>
             </a>
           </div>
         </div>
-        <img src="assets/img/about1.jpg" alt="Image1" class="about_img" />
+        <img src="{% static 'portfolio/images/about1.jpg' %}" alt="Image1" class="about_img" />
       </div>
     </section>
 
@@ -386,7 +386,7 @@
         <div class="swiper-wrapper">
           <!--1-->
           <div class="portfolio_content grid swiper-slide">
-            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
+            <img src="{% static 'portfolio/images/portfolio1.jpg' %}" alt="" class="portfolio_img">
 
             <div class="portfolio_data">
               <h3 class="portfolio_title">Project 1</h3>
@@ -401,7 +401,7 @@
 
           <!--2-->
           <div class="portfolio_content grid swiper-slide">
-            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio_img">
+            <img src="{% static 'portfolio/images/portfolio2.jpg' %}" alt="" class="portfolio_img">
 
             <div class="portfolio_data">
               <h3 class="portfolio_title">Project 2</h3>
@@ -416,7 +416,7 @@
 
           <!--3-->
           <div class="portfolio_content grid swiper-slide">
-            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_img">
+            <img src="{% static 'portfolio/images/portfolio3.jpg' %}" alt="" class="portfolio_img">
 
             <div class="portfolio_data">
               <h3 class="portfolio_title">Project 3</h3>
@@ -450,7 +450,7 @@
             <h2 class="blog_title">My Blog!</h2>
             <p class="blog_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates,
               exercitationem!</p>
-            <a href="blog.html" class="button button_flex button_small button_white">
+            <a href="{% static 'portfolio:blog' %}" class="button button_flex button_small button_white">
               Explore
               <i class="uil uil-arrow-right blog_icon button_icon"></i>
             </a>

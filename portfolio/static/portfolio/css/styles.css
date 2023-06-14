@@ -144,6 +144,7 @@ img {
 /*scroll bar*/
 ::-webkit-scrollbar {
   width: 0.8rem;
+  overflow-x: hidden;
   background-color: var(--scroll-bar-color);
 }
 
